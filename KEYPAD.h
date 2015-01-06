@@ -32,7 +32,7 @@ char ReadKEYPAD()
 {
 	for (int i = 0; i < 3; i++)
 	{
-		// Set one of the columns output pin to low.
+		// Set one of the columns output pins to low.
 		PORTD &= ~(1<<KEYPADsColumns[i]);
 		
 		_delay_us(20);
